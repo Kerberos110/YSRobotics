@@ -14,14 +14,18 @@ int CFG_DEST_X, CFG_DEST_Y;
 int CFG_BOTSIZE_X,CFG_BOTSIZE_Y;
 double CFG_MAP_RES, CFG_GRID_RES;
 
-void CfgMgr::LoadConfigurationFile(const char* filename)
+
+// Default Constructor
+CfgMgr::CfgMgr(){
+    
+}
+
+void LoadConfigurationFile(const char* filename)
 {
     ifstream cfgfile;
     cfgfile.open(filename);
     string a,b;
-    
-    
-
+        
     cfgfile >> a >> CFG_MAPFILE_LOCATION;
     cfgfile >> a >> CFG_ROBOINIT_LOCATIONX >> CFG_ROBOINIT_LOCATIONY >> CFG_ROBOINIT_LOCATIONYAW;
     cfgfile >> a >> CFG_DEST_X >> CFG_DEST_Y;

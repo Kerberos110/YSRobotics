@@ -13,10 +13,16 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>roboticLabMap.png</itemPath>
+      <itemPath>test.png</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>CfgMgr.cpp</itemPath>
+      <itemPath>Map.cpp</itemPath>
+      <itemPath>PathPlanner.cpp</itemPath>
+      <itemPath>lodepng.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -30,12 +36,6 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>CfgMgr.cpp</itemPath>
-    <itemPath>Map.cpp</itemPath>
-    <itemPath>PathPlanner.cpp</itemPath>
-    <itemPath>lodepng.cpp</itemPath>
-    <itemPath>roboticLabMap.png</itemPath>
-    <itemPath>test.png</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

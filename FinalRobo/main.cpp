@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <math.h>
+#include "CfgMgr.h"
 #include <libplayerc++/playerc++.h>
 
 using namespace std;
@@ -21,7 +22,7 @@ using namespace PlayerCc;
 #define LASER_MESURING_AREA         120
 #define LASER_RESOLUTION            0.36
 #define DEGTOINDEX(DEGREE) (int)((DEGREE + LASER_MESURING_AREA) / LASER_RESOLUTION)
-/* sample project - change check by shahaf */
+
 int main(int argc, char** argv) {
     
     /*
@@ -61,10 +62,11 @@ int main(int argc, char** argv) {
         parametersfile = argv[1];
     }
     
-    /*
+    
     
     LoadConfigurationFile(parametersfile);
     
+    /*
     loadmap("roboticLabMap.png");
     */
     
