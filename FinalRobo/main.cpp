@@ -8,6 +8,7 @@
 #include <iostream>
 #include <math.h>
 #include "CfgMgr.h"
+#include "Map.h"
 #include <libplayerc++/playerc++.h>
 
 using namespace std;
@@ -66,9 +67,8 @@ int main(int argc, char** argv) {
     
     LoadConfigurationFile(parametersfile);
     
-    /*
-    loadmap("roboticLabMap.png");
-    */
+    LoadMap("roboticLabMap.png");
+    
     
     return 0;
 }
