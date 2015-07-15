@@ -35,6 +35,16 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/include/player-2.0</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>playerc++</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
