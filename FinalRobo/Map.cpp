@@ -37,45 +37,44 @@ void LoadMap(const char* filename)
       }*/
       bytesIndex=bytesIndex+4;
       
-      
+      //double DIVFACTOR = (double((double)CFG_GRID_RES/CFG_MAP_RES));
+    int DIVFACTOR = 4;
+    int DIVIFACTOR = 4;
+    int grid[width/DIVIFACTOR][height/DIVIFACTOR];
+
+    for (int iwidth = 0; iwidth < width; iwidth=iwidth+DIVFACTOR) {
+      for (int iheight = 0; iheight < height; iheight+DIVFACTOR) {
+
+          bool bIsDIrty = false;   
+          for (int xrunner = 0; xrunner < DIVFACTOR; xrunner++) {
+                 for (int yrunner = 0; yrunner < DIVFACTOR; yrunner++) {
+                     if(map[iwidth+xrunner][iheight+yrunner]==COLOR_BLACK)
+                     {
+                         bIsDIrty=true;
+                     }
+                 }
+             }
+          if(!bIsDIrty)
+          {
+              grid[iwidth/DIVIFACTOR][iheight/DIVIFACTOR] = COLOR_WHITE;
+          }
+          else
+          {
+              grid[iwidth/DIVIFACTOR][iheight/DIVIFACTOR] = COLOR_BLACK;
+          }
+          iheight +=DIVIFACTOR;
+      }
+      iwidth +=DIVIFACTOR;
+
+  }
   }
   
-  //BLOWMAPHERE
-  
-  
-  //double DIVFACTOR = (double((double)CFG_GRID_RES/CFG_MAP_RES));
-  int DIVFACTOR = 4;
-  int DIVIFACTOR = 4;
-  int grid[width/DIVIFACTOR][height/DIVIFACTOR];
- 
-  for (int iwidth = 0; iwidth < width; iwidth=iwidth+DIVFACTOR) {
-    for (int iheight = 0; iheight < height; iheight+DIVFACTOR) {
-        
-        bool bIsDIrty = false;   
-        for (int xrunner = 0; xrunner < DIVFACTOR; xrunner++) {
-               for (int yrunner = 0; yrunner < DIVFACTOR; yrunner++) {
-                   if(map[iwidth+xrunner][iheight+yrunner]==COLOR_BLACK)
-                   {
-                       bIsDIrty=true;
-                   }
-               }
-           }
-        if(!bIsDIrty)
-        {
-            grid[iwidth/DIVIFACTOR][iheight/DIVIFACTOR] = COLOR_WHITE;
-        }
-        else
-        {
-            grid[iwidth/DIVIFACTOR][iheight/DIVIFACTOR] = COLOR_BLACK;
-        }
-        iheight +=DIVIFACTOR;
-    }
-    iwidth +=DIVIFACTOR;
-  }
 }
 
 template <size_t size_x, size_t size_y>
+
+//BLOWMAPHERE
 void CreateGridFromMap(int (&arr)[size_x][size_y])
 {
-    
+  
 }
