@@ -4,8 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>ConfigurationManager.h</itemPath>
-      <itemPath>robot.h</itemPath>
+      <itemPath>Globals.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,7 +13,6 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>ConfigurationManager.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -28,8 +26,6 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>Globals.h</itemPath>
-    <itemPath>robot.cpp</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -51,17 +47,9 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="ConfigurationManager.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ConfigurationManager.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Globals.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="robot.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="robot.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -84,17 +72,9 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="ConfigurationManager.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ConfigurationManager.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Globals.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="robot.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="robot.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

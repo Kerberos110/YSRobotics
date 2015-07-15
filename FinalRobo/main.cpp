@@ -24,6 +24,9 @@ using namespace PlayerCc;
 /* sample project - change check by shahaf */
 int main(int argc, char** argv) {
     
+    /*
+     
+    
     PlayerClient pc("localhost", 6665);
     LaserProxy lp(&pc);
     Position2dProxy pp(&pc);
@@ -42,6 +45,28 @@ int main(int argc, char** argv) {
         else
             pp.SetSpeed(FORWARD_MOVEMENT_SPEED, 0);
     }
+    */
+    
+     //int i = pathmain();
+    
+    
+    const char *parametersfile;
+    
+    if(argc<= 1)           
+    {
+        parametersfile = "parameters.txt";
+    }
+    else
+    {
+        parametersfile = argv[1];
+    }
+    
+    /*
+    
+    LoadConfigurationFile(parametersfile);
+    
+    loadmap("roboticLabMap.png");
+    */
     
     return 0;
 }
