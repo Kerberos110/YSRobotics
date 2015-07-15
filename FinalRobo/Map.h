@@ -17,8 +17,10 @@ public:
 private:
     template <size_t size_x, size_t size_y>
     void CreateGridFromMap(double (&arr)[size_x][size_y]);
-    void LoadMap(const char* filename);
+    
 };
+
+void LoadMap(const char* filename);
 
 
 
