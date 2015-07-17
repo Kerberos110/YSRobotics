@@ -36,3 +36,6 @@ void LoadConfigurationFile(const char* filename)
     }
 
 }
+CfgMgr::~CfgMgr(){
+    
+}

@@ -7,6 +7,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/home/colman/NetBeansProjects/FInal/YSRobotics/FinalRobo/Particle.cpp</file>
             <file>file:/home/colman/NetBeansProjects/FInal/YSRobotics/FinalRobo/Particle.h</file>
             <file>file:/home/colman/NetBeansProjects/FInal/YSRobotics/FinalRobo/Robot.cpp</file>
@@ -15,6 +16,13 @@
             <file>file:/home/colman/NetBeansProjects/FInal/YSRobotics/FinalRobo/Map.cpp</file>
             <file>file:/home/colman/NetBeansProjects/FInal/YSRobotics/FinalRobo/Robot.h</file>
             <file>file:/home/colman/NetBeansProjects/FInal/YSRobotics/FinalRobo/main.cpp</file>
+=======
+            <file>file:/home/colman/NetBeansProjects/SuicideProject/YSRobotics/FinalRobo/CfgMgr.cpp</file>
+            <file>file:/home/colman/NetBeansProjects/SuicideProject/YSRobotics/FinalRobo/Map.cpp</file>
+            <file>file:/home/colman/NetBeansProjects/SuicideProject/YSRobotics/FinalRobo/main.cpp</file>
+            <file>file:/home/colman/NetBeansProjects/SuicideProject/YSRobotics/FinalRobo/Particle.h</file>
+            <file>file:/home/colman/NetBeansProjects/SuicideProject/YSRobotics/FinalRobo/PathPlanner.cpp</file>
+>>>>>>> 91ab714079fd773238968bbe9e6ab847a1322fca
         </group>
     </open-files>
 </project-private>
