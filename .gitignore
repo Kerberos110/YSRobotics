@@ -26,5 +26,10 @@
 *.exe
 *.out
 *.app
+<<<<<<< HEAD
 /FinalRobo/dist/
 /FinalRobo/build/
+=======
+/FinalRobo/build/
+/FinalRobo/dist/
+>>>>>>> d579cc4b5ab1bbe9d34b27e4cd1fbf2dd6d3440e
