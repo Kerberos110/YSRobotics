@@ -26,3 +26,5 @@
 *.exe
 *.out
 *.app
+/FinalRobo/build/
+/FinalRobo/dist/

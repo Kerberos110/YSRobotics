@@ -43,7 +43,7 @@ void LoadMap(const char* filename)
     int grid[width/DIVIFACTOR][height/DIVIFACTOR];
 
     for (int iwidth = 0; iwidth < width; iwidth=iwidth+DIVFACTOR) {
-      for (int iheight = 0; iheight < height; iheight+DIVFACTOR) {
+      for (int iheight = 0; iheight < height; iheight=iheight+DIVFACTOR) {
 
           bool bIsDIrty = false;   
           for (int xrunner = 0; xrunner < DIVFACTOR; xrunner++) {
@@ -65,6 +65,18 @@ void LoadMap(const char* filename)
           iheight +=DIVIFACTOR;
       }
       iwidth +=DIVIFACTOR;
+      
+      
+      for(int y=0;y<height/DIVIFACTOR;y++)
+        {
+            for(int x=0;x<width/DIVIFACTOR;x++)
+                if(map[x][y]==0)
+                    cout<<".";
+                else if(map[x][y]==1)
+                    cout<<"1";
+               
+            cout<<endl;
+        }
 
   }
   }
