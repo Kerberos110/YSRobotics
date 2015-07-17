@@ -6,9 +6,11 @@
                    projectFiles="true">
       <itemPath>CfgMgr.h</itemPath>
       <itemPath>Globals.h</itemPath>
+      <itemPath>LocalizationManager.h</itemPath>
       <itemPath>Map.h</itemPath>
       <itemPath>Particle.h</itemPath>
       <itemPath>PathPlanner.h</itemPath>
+      <itemPath>Robot.h</itemPath>
       <itemPath>lodepng.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -21,8 +23,11 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>CfgMgr.cpp</itemPath>
+      <itemPath>LocalizationManager.cpp</itemPath>
       <itemPath>Map.cpp</itemPath>
+      <itemPath>Particle.cpp</itemPath>
       <itemPath>PathPlanner.cpp</itemPath>
+      <itemPath>Robot.cpp</itemPath>
       <itemPath>lodepng.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -64,15 +69,25 @@
       </item>
       <item path="Globals.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="LocalizationManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LocalizationManager.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Map.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Particle.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Particle.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PathPlanner.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PathPlanner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Robot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Robot.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="lodepng.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -111,15 +126,25 @@
       </item>
       <item path="Globals.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="LocalizationManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LocalizationManager.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Map.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Particle.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Particle.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PathPlanner.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PathPlanner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Robot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Robot.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="lodepng.cpp" ex="false" tool="1" flavor2="0">
       </item>

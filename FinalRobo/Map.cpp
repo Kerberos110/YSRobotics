@@ -7,6 +7,78 @@ using namespace std;
 const int COLOR_WHITE=0;
 const int COLOR_BLACK=1;
 
+// Ctor and Init map from scratch
+Map::Map()
+{
+	for (int i = 0; i < MAP_SIZE; i++)
+	{
+		for (int j = 0; j < MAP_SIZE; j++)
+		{
+			_mapMatrix[i][j] = UNKNOWN_CELL;
+		}
+	}
+}
+
+// Ctor to init map with a map as parameter
+Map::Map(Map* mapToCopy)
+{
+	for (int i = 0; i < MAP_SIZE; i++)
+	{
+		for (int j = 0; j < MAP_SIZE; j++)
+		{
+			_mapMatrix[i][j] = mapToCopy->_mapMatrix[i][j];
+		}
+	}
+}
+
+void CreateMap(char* filePath)
+{
+
+}
+
+void Map::setMapValue(double x, double y, char value)
+{
+	int col = getColFromXPos(x);
+	int row = getRowFromYPos(y);
+
+	if (_mapMatrix[row][col] != OCCUPIED_CELL)
+	{
+		_mapMatrix[row][col] = value;
+	}
+}
+
+void Map::printMap()
+{
+	// Print to console
+	for (int i=MAP_SIZE - 1; i >= 0 ; i--)
+	{
+		for (int j=MAP_SIZE - 1; j >= 0; j--)
+		{
+			cout << _mapMatrix[i][j];
+		}
+		cout << endl;
+	}
+	cout << endl;
+}
+
+char Map::getMapValueFromRealLocation(double x, double y)
+{
+	int col = getColFromXPos(x);
+	int row = getRowFromYPos(y);
+	return _mapMatrix[row][col];
+}
+
+int Map::getColFromXPos(double x)
+{
+	return (x / RESOLUTION) + (MAP_SIZE / 2);
+}
+
+int Map::getRowFromYPos(double y)
+{
+	return (MAP_SIZE / 2) - (y / RESOLUTION);
+}
+
+
 void LoadMap(const char* filename)
 {
   std::vector<unsigned char> png;
@@ -66,10 +138,11 @@ void LoadMap(const char* filename)
       }
       iwidth +=DIVIFACTOR;
       
-      
-      for(int y=0;y<height/DIVIFACTOR;y++)
+    }
+  }
+      for(int y=0;y<height/4;y++)
         {
-            for(int x=0;x<width/DIVIFACTOR;x++)
+            for(int x=0;x<width/4;x++)
                 if(map[x][y]==0)
                     cout<<".";
                 else if(map[x][y]==1)
@@ -78,8 +151,8 @@ void LoadMap(const char* filename)
             cout<<endl;
         }
 
-  }
-  }
+  
+  
   
 }
 

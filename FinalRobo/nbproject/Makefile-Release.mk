@@ -36,8 +36,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CfgMgr.o \
+	${OBJECTDIR}/LocalizationManager.o \
 	${OBJECTDIR}/Map.o \
+	${OBJECTDIR}/Particle.o \
 	${OBJECTDIR}/PathPlanner.o \
+	${OBJECTDIR}/Robot.o \
 	${OBJECTDIR}/lodepng.o \
 	${OBJECTDIR}/main.o
 
@@ -71,15 +74,30 @@ ${OBJECTDIR}/CfgMgr.o: CfgMgr.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CfgMgr.o CfgMgr.cpp
 
+${OBJECTDIR}/LocalizationManager.o: LocalizationManager.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/LocalizationManager.o LocalizationManager.cpp
+
 ${OBJECTDIR}/Map.o: Map.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Map.o Map.cpp
 
+${OBJECTDIR}/Particle.o: Particle.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Particle.o Particle.cpp
+
 ${OBJECTDIR}/PathPlanner.o: PathPlanner.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PathPlanner.o PathPlanner.cpp
+
+${OBJECTDIR}/Robot.o: Robot.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Robot.o Robot.cpp
 
 ${OBJECTDIR}/lodepng.o: lodepng.cpp 
 	${MKDIR} -p ${OBJECTDIR}
