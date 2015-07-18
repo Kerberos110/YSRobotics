@@ -4,14 +4,26 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="Behaviors" projectFiles="true">
+        <itemPath>Behaviors/Behavior.cpp</itemPath>
+        <itemPath>Behaviors/Behavior.h</itemPath>
+        <itemPath>Behaviors/MoveForward.cpp</itemPath>
+        <itemPath>Behaviors/MoveForward.h</itemPath>
+        <itemPath>Behaviors/Movement.cpp</itemPath>
+        <itemPath>Behaviors/Movement.h</itemPath>
+        <itemPath>Behaviors/TurnLeft.cpp</itemPath>
+        <itemPath>Behaviors/TurnLeft.h</itemPath>
+        <itemPath>Behaviors/TurnRight.cpp</itemPath>
+        <itemPath>Behaviors/TurnRight.h</itemPath>
+      </logicalFolder>
       <itemPath>CfgMgr.h</itemPath>
       <itemPath>Globals.h</itemPath>
       <itemPath>LocalizationManager.h</itemPath>
       <itemPath>Map.h</itemPath>
       <itemPath>Particle.h</itemPath>
       <itemPath>PathPlanner.h</itemPath>
-      <itemPath>Robot.h</itemPath>
       <itemPath>lodepng.h</itemPath>
+      <itemPath>robot.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -27,9 +39,9 @@
       <itemPath>Map.cpp</itemPath>
       <itemPath>Particle.cpp</itemPath>
       <itemPath>PathPlanner.cpp</itemPath>
-      <itemPath>Robot.cpp</itemPath>
       <itemPath>lodepng.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>robot.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -63,6 +75,26 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="Behaviors/Behavior.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/Behavior.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Behaviors/MoveForward.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/MoveForward.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Behaviors/Movement.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/Movement.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Behaviors/TurnLeft.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/TurnLeft.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Behaviors/TurnRight.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/TurnRight.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="CfgMgr.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CfgMgr.h" ex="false" tool="3" flavor2="0">
@@ -85,15 +117,15 @@
       </item>
       <item path="PathPlanner.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Robot.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Robot.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="lodepng.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="lodepng.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="robot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="robot.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="roboticLabMap.png" ex="false" tool="3" flavor2="0">
       </item>
@@ -120,6 +152,26 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Behaviors/Behavior.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/Behavior.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Behaviors/MoveForward.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/MoveForward.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Behaviors/Movement.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/Movement.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Behaviors/TurnLeft.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/TurnLeft.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Behaviors/TurnRight.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Behaviors/TurnRight.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="CfgMgr.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CfgMgr.h" ex="false" tool="3" flavor2="0">
@@ -142,15 +194,15 @@
       </item>
       <item path="PathPlanner.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Robot.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Robot.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="lodepng.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="lodepng.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="robot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="robot.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="roboticLabMap.png" ex="false" tool="3" flavor2="0">
       </item>

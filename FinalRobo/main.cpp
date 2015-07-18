@@ -1,15 +1,9 @@
-/* 
- * File:   main.cpp
- * Author: colman
- *
- * Created on June 7, 2015, 12:49 AM
- */
-
 #include <iostream>
 #include <math.h>
 #include "CfgMgr.h"
 #include "Map.h"
 #include "PathPlanner.h"
+#include "robot.h"
 #include <libplayerc++/playerc++.h>
 
 using namespace std;
@@ -27,8 +21,19 @@ using namespace PlayerCc;
 
 int main(int argc, char** argv) {
     
-    /*
-     
+    // Init new robot
+    Robot* robot = new Robot("localhost", 6665);
+    
+    const char *parametersfile = "parameters.txt";
+   
+  
+    LoadConfigurationFile(parametersfile, robot);
+    
+    // Set the robot starting point
+    robot->updatePosition((double)(robot->startX / RESOLUTION),
+		          (double)(robot->startY / RESOLUTION),
+			  (double)(robot->startYaw));
+    
     
     PlayerClient pc("localhost", 6665);
     LaserProxy lp(&pc);
@@ -48,8 +53,8 @@ int main(int argc, char** argv) {
         else
             pp.SetSpeed(FORWARD_MOVEMENT_SPEED, 0);
     }
-    */
     
+    /*
      //int i = pathmain();
     
         pathmain();
@@ -68,7 +73,7 @@ int main(int argc, char** argv) {
     
     LoadConfigurationFile(parametersfile);
     LoadMap("roboticLabMap.png");
-    
+    */
     
     /*
     srand(time(NULL));

@@ -9,7 +9,7 @@
 
 #include "Globals.h"
 #include "Particle.h"
-#include "Robot.h"
+#include "robot.h"
 #include "Map.h"
 
 class Particle

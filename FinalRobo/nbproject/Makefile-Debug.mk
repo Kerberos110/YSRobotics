@@ -35,14 +35,19 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Behaviors/Behavior.o \
+	${OBJECTDIR}/Behaviors/MoveForward.o \
+	${OBJECTDIR}/Behaviors/Movement.o \
+	${OBJECTDIR}/Behaviors/TurnLeft.o \
+	${OBJECTDIR}/Behaviors/TurnRight.o \
 	${OBJECTDIR}/CfgMgr.o \
 	${OBJECTDIR}/LocalizationManager.o \
 	${OBJECTDIR}/Map.o \
 	${OBJECTDIR}/Particle.o \
 	${OBJECTDIR}/PathPlanner.o \
-	${OBJECTDIR}/Robot.o \
 	${OBJECTDIR}/lodepng.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/robot.o
 
 
 # C Compiler Flags
@@ -69,6 +74,31 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/finalrobo: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/finalrobo ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Behaviors/Behavior.o: Behaviors/Behavior.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Behaviors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/local/include/player-2.0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Behaviors/Behavior.o Behaviors/Behavior.cpp
+
+${OBJECTDIR}/Behaviors/MoveForward.o: Behaviors/MoveForward.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Behaviors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/local/include/player-2.0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Behaviors/MoveForward.o Behaviors/MoveForward.cpp
+
+${OBJECTDIR}/Behaviors/Movement.o: Behaviors/Movement.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Behaviors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/local/include/player-2.0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Behaviors/Movement.o Behaviors/Movement.cpp
+
+${OBJECTDIR}/Behaviors/TurnLeft.o: Behaviors/TurnLeft.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Behaviors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/local/include/player-2.0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Behaviors/TurnLeft.o Behaviors/TurnLeft.cpp
+
+${OBJECTDIR}/Behaviors/TurnRight.o: Behaviors/TurnRight.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Behaviors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/local/include/player-2.0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Behaviors/TurnRight.o Behaviors/TurnRight.cpp
+
 ${OBJECTDIR}/CfgMgr.o: CfgMgr.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -94,11 +124,6 @@ ${OBJECTDIR}/PathPlanner.o: PathPlanner.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -I/usr/local/include/player-2.0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PathPlanner.o PathPlanner.cpp
 
-${OBJECTDIR}/Robot.o: Robot.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -I/usr/local/include/player-2.0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Robot.o Robot.cpp
-
 ${OBJECTDIR}/lodepng.o: lodepng.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -108,6 +133,11 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -I/usr/local/include/player-2.0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/robot.o: robot.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/local/include/player-2.0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/robot.o robot.cpp
 
 # Subprojects
 .build-subprojects:

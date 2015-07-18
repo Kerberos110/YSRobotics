@@ -7,6 +7,7 @@
 
 #ifndef CFGMGR_H
 #define	CFGMGR_H
+#include "robot.h"
 
 using namespace std;
 
@@ -22,6 +23,8 @@ public:
     int CFG_BOTSIZE_X,CFG_BOTSIZE_Y;
     double CFG_MAP_RES, CFG_GRID_RES;
 };
+
+void LoadConfigurationFile(const char* filename, Robot* robo);
 void LoadConfigurationFile(const char* filename);
 #endif	/* CFGMGR_H */
 
