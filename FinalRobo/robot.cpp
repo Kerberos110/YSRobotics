@@ -31,7 +31,6 @@ Robot::Robot(char* ip, int port){
 }
 
 // Methods
-//todo: change the read
 void Robot::read()
 {
 	_pc->Read();

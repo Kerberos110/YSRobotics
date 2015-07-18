@@ -34,25 +34,37 @@ int main(int argc, char** argv) {
 		          (double)(robot->startY / RESOLUTION),
 			  (double)(robot->startYaw));
     
+    robot->updateCurrPosition((double)(robot->startX / RESOLUTION),
+                              (double)(robot->startY / RESOLUTION),
+                              (double)(robot->startYaw));
     
-    PlayerClient pc("localhost", 6665);
-    LaserProxy lp(&pc);
-    Position2dProxy pp(&pc);
-    
-    pp.SetMotorEnable(true);
-    
-    // First few reads in player are bad so we heat the engine (literally)
-    for (int i = 0; i < 15; i++)
-        pc.Read();
-    
-    while (true) {
-        pc.Read();
-        
-        if (lp[DEGTOINDEX(0)] < MINIMUM_DISTANCE_AVOIDANCE)
-            pp.SetSpeed(0, YAW_MOVEMENT_SPEED);
-        else
-            pp.SetSpeed(FORWARD_MOVEMENT_SPEED, 0);
+    while (true)
+    {
+        robot->read();
+        robot->setSpeed(FORWARD_MOVEMENT_SPEED,0);
     }
+    
+//    
+//    PlayerClient pc("localhost", 6665);
+//    LaserProxy lp(&pc);
+//    Position2dProxy pp(&pc);
+//    
+//      
+//    pp.SetMotorEnable(true);
+//    
+//    // First few reads in player are bad so we heat the engine (literally)
+//    for (int i = 0; i < 15; i++)
+//        pc.Read();
+//    
+//    while (true) {
+//        pc.Read();
+//        
+//        
+//        if (lp[DEGTOINDEX(0)] < MINIMUM_DISTANCE_AVOIDANCE)
+//            pp.SetSpeed(0, YAW_MOVEMENT_SPEED);
+//        else
+//            pp.SetSpeed(FORWARD_MOVEMENT_SPEED, 0);
+//    }
     
     /*
      //int i = pathmain();
